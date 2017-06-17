@@ -1552,8 +1552,8 @@ label.control-label {
 }
 
 .form-group {
-  padding-bottom: 7px;
-  margin: 27px 0 0 0;
+  padding-bottom: 2px;
+  margin: 2px 0 0 0;
 }
 .form-group .form-control {
   margin-bottom: 7px;
@@ -1585,11 +1585,12 @@ label.control-label {
   font-weight: 400;
 }
 .form-group label.control-label {
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.07143;
   color: #AAAAAA;
   font-weight: 400;
-  margin: 16px 0 0 0;
+  margin: 11px 0 0 0;
+  text-align: left;
 }
 .form-group .help-block {
   margin-top: 0;
