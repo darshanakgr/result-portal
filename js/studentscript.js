@@ -45,3 +45,11 @@ function addStudent() {
         alert('Please enter index number before register...');
     }
 }
+
+var form = document.getElementById("student");
+
+function handleForm(event) {
+    event.preventDefault();
+}
+
+form.addEventListener('submit', handleForm);

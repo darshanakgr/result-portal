@@ -74,7 +74,7 @@
 
         <div class="section" id="search-detail">
             <div class="container">
-                <form class="student-detail form-horizontal" action="#" onsubmit="searchStudent()">
+                <form class="student-detail form-horizontal" name="student">
                     <fieldset>
                         <legend>Student Information</legend>
 
@@ -84,7 +84,7 @@
                                 <input type="text" class="form-control" id="indexNumber" placeholder="Enter Index Number"/>
                             </div>
                             <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                                <input type="submit" value="Search" class="btn btn-info"/>
+                                <input type="button" value="Search" class="btn btn-info" onclick="searchStudent()">
                             </div>
                         </div>
 
