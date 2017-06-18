@@ -74,36 +74,36 @@
 
         <div class="section" id="search-detail">
             <div class="container">
-                <form class="student-detail form-horizontal" onsubmit="searchStudent()" action="#">
+                <form class="student-detail form-horizontal"  action="#">
                     <fieldset>
                         <legend>Student Information</legend>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-1">Index No</label>
+                            <label class="control-label col-sm-2 col-md-1">Index No</label>
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <input type="text" class="form-control" id="indexNumber" placeholder="Enter Index Number">
                             </div>
                             <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
-                                <input type="submit" class="btn btn-info" value="Search" >
+                                <button class="btn btn-info" onclick="searchStudent()">Search</button>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-1 col-md-1 col-lg-1">Name</label>
+                            <label class="control-label col-sm-2 col-md-1">Name</label>
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <input type="text" class="form-control" id="name" readonly="true">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-1 col-md-1 col-lg-1">GPA</label>
+                            <label class="control-label col-sm-2 col-md-1">GPA</label>
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <input type="text" class="form-control" id="gpa" readonly="true">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-sm-1 col-md-1 col-lg-1">Rank</label>
+                            <label class="control-label col-sm-2 col-md-1">Rank</label>
                             <div class="col-sm-3 col-md-3 col-lg-3">
                                 <input type="text" class="form-control" id="rank" readonly="true">
                             </div>
