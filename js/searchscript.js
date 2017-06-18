@@ -1,6 +1,13 @@
 /**
  * Created by drox2014 on 6/13/2017.
  */
+var parm = window.location.search;
+
+window.onload = function () {
+    console.log('hi')
+    console.log(parm);
+}
+
 var config = {
     apiKey: "AIzaSyC_MAA3q1F2RRvh_AJD6Rz7ucT5Th-lgXk",
     authDomain: "result-portal-8f513.firebaseapp.com",
