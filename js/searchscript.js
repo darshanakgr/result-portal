@@ -35,6 +35,8 @@ function findGrade(gradePoint) {
             return "C";
         case "1.5":
             return "C-";
+        case "1.0":
+            return "D";
         default:
             return "I-we";
     }
@@ -92,4 +94,15 @@ function searchStudent() {
     } else {
         alert('Please enter index number before searching...');
     }
+}
+
+window.onload = function () {
+    var param = window.location.href.split("?")
+    if(param.length > 1){
+        if(param[1].startsWith("index")){
+            document.getElementById("indexNumber").value = param[1].split("=")[1];
+            searchStudent();
+        }
+    }
+
 }

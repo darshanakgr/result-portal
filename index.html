@@ -21,6 +21,7 @@
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="css/demo.css" rel="stylesheet"/>
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 
 </head>
 
@@ -53,7 +54,7 @@
 
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#search">View Ranks</a></li>
+                <li><a href="view-rank.html">View Ranks</a></li>
                 <li><a href="result-search.html">Search Result</a></li>
             </ul>
         </div>
@@ -68,8 +69,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="brand">
                         <h1>WELCOME</h1>
-                        <h3> I will be the leader of a company that ends up being worth billions of dollars, because
-                            I got the answers... </h3>
+                        <h3>See your result in an instant!</h3>
                     </div>
                 </div>
             </div>
@@ -83,19 +83,19 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="circle" style="background-color: #e74c3c">
-                            <h2 class="vertical-center text-center" style="font-size: 50px;color: #FFFFFF">758</h2>
+                            <h2 class="vertical-center text-center" id="student" style="font-size: 50px;color: #FFFFFF">0</h2>
                         </div>
                         <h3 class="text-center text-uppercase">Students</h3>
                     </div>
                     <div class="col-sm-4">
                         <div class="circle" style="background-color: #8e44ad">
-                            <h2 class="vertical-center text-center" style="font-size: 50px;color: #FFFFFF">6</h2>
+                            <h2 class="vertical-center text-center" id="moduleCount" style="font-size: 50px;color: #FFFFFF">0</h2>
                         </div>
                         <h3 class="text-center text-uppercase">Modules</h3>
                     </div>
                     <div class="col-sm-4">
                         <div class="circle" style="background-color: #27ae60">
-                            <h2 class="vertical-center text-center" style="font-size: 50px;color: #FFFFFF">14</h2>
+                            <h2 class="vertical-center text-center" id="credit" style="font-size: 50px;color: #FFFFFF">0</h2>
                         </div>
                         <h3 class="text-center text-uppercase">Credits</h3>
                     </div>
@@ -107,14 +107,14 @@
             <div class="container">
                 <div class="title">
                     <h2 class="text-center text-uppercase">Enter Your Index Number</h2>
-                    <form action="#">
+                    <form action="result-search.html">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-sm-4 col-sm-offset-4">
                                     <div class="input-group">
-                                        <input type="text" placeholder="160000X" class="form-control"/>
+                                        <input type="text" placeholder="160000X" class="form-control" id="indexNumberText" name="index"/>
                                         <span class="input-group-btn">
-                                            <button class="btn btn-info" type="button">Go!</button>
+                                            <button class="btn btn-info" type="button" onclick="location.href='result-search.html?index='+document.getElementById('indexNumberText').value">Go!</button>
                                         </span>
                                     </div><!-- /input-group -->
                                 </div><!-- /.col-lg-4 -->
@@ -125,45 +125,41 @@
             </div>
         </div>
 
-        <div class="section" id="chart">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="card">
-                            <div>
-                                <h4 class="text-center">Result Analyis</h4>
-                            </div>
-                            <div class="content">
-                                <div id="chartHours" class="ct-chart"></div>
-                                <div class="footer">
-                                    <div class="legend">
-                                        <i class="fa fa-circle text-info"></i> CS001
-                                        <i class="fa fa-circle text-danger"></i> ME001
-                                    </div>
-                                    <hr>
-                                    <div class="stats">
-                                        <i class="fa fa-history"></i> Updated 3 minutes ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="section" id="chart">-->
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-8 col-md-offset-2">-->
+        <!--<div class="card">-->
+        <!--<div>-->
+        <!--<h4 class="text-center">Result Analyis</h4>-->
+        <!--</div>-->
+        <!--<div class="content">-->
+        <!--<div id="chartHours" class="ct-chart"></div>-->
+        <!--<div class="footer">-->
+        <!--<div class="legend">-->
+        <!--<i class="fa fa-circle text-info"></i> CS001-->
+        <!--<i class="fa fa-circle text-danger"></i> ME001-->
+        <!--</div>-->
+        <!--<hr>-->
+        <!--<div class="stats">-->
+        <!--<i class="fa fa-history"></i> Updated 3 minutes ago-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
         <div class="section" id="who-we-are">
             <div class="container">
                 <div class="title">
-                    <h2 class="text-center text-uppercase">About us</h2>
-                    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum</p>
+                    <h2 class="text-center text-uppercase">Warning!</h2>
+                    <p class="text-center">This is a <strong>NON-OFFICIAL</strong> web site maintained by CSE'15. This
+                        may contain incorrect grades. Under any circumstances, you cannot use this as an official result
+                        sheet or any other certified material. We highly recommond you to refer the official result
+                        sheets. Thank you!</p>
                 </div>
             </div>
         </div>
