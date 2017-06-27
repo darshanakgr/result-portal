@@ -24,7 +24,7 @@
 
     <!-- Javascript Firecase -->
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-    <script src="js/rankscript.js"></script>
+    <script src="js/ordered-rankscript.js"></script>
 
 </head>
 
@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <a class="btn btn-danger" href="view-orderd-rank.html">View Ordered Version</a>
+                        <a class="btn btn-danger" href="view-rank.html">View Non-Ordered Version</a>
                     </div>
                 </div>
             </div>
@@ -90,10 +90,11 @@
                             <table class="table table-striped" id="result-table">
                                 <thead>
                                 <tr>
+                                    <th>#</th>
                                     <th>Rank</th>
                                     <th>Index No</th>
-                                    <th>Name</th>
                                     <th>GPA</th>
+                                    <th>Name</th>
                                 </tr>
                                 </thead>
                                 <tbody>
