@@ -24,7 +24,7 @@
 
     <!-- Javascript Firecase -->
     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-    <script src="js/ordered-rankscript.js"></script>
+    <script src="js/rankscript.js"></script>
 
 </head>
 
@@ -57,9 +57,9 @@
 
         <div class="collapse navbar-collapse" id="navigation-index">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="view-rank.html">View Ranks</a></li>
+                <li><a href="view-rank.html">View Ranks</a></li>
                 <li><a href="result-search.html">Search Result</a></li>
-                <li><a href="feedback.html">Feeback</a></li>
+                <li class="active"><a href="feedback.html">Feeback</a></li>
             </ul>
         </div>
     </div>
@@ -75,37 +75,14 @@
 
         <div class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <a class="btn btn-danger" href="view-rank.html">View Non-Ordered Version</a>
+                <div class="form">
+                    <div class="text-center">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftnOLUGQnhaYAAevB4VCyHUgams_XCg34SAVZbDTaT7wU3HA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section" id="result-table-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <div class="table-responsive">
-                            <table class="table table-striped" id="result-table">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Rank</th>
-                                    <th>Index No</th>
-                                    <th>GPA</th>
-                                    <th>Name</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class="footer">
